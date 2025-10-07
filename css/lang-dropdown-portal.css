@@ -1,0 +1,30 @@
+
+/* Lang dropdown portal styles */
+.lang-portal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: .5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  padding: .35rem 0;
+  z-index: 2147483647;
+}
+.lang-portal.hidden { display: none; }
+.lang-portal ul { margin: 0; padding: 0; list-style: none; }
+.lang-portal li { margin: 0; }
+.lang-portal a {
+  display: block;
+  padding: .5rem .75rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.lang-portal a:hover,
+.lang-portal a:focus {
+  background: rgba(0,0,0,.05);
+  outline: none;
+}
