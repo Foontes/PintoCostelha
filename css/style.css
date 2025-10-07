@@ -36639,4 +36639,5 @@ ul.team-list .team-item .thumb-info-social-icons {
   width: 100%;
   height: auto;
   display: block;
+  z-index: 100;
 }
