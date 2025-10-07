@@ -25,6 +25,14 @@
   #header .header-row { overflow: visible !important; }
 }
 
+@supports (-webkit-touch-callout: none) {
+  .header-row,
+  .header-nav,
+  .header-logo {
+    transform: none !important; /* só no Safari */
+  }
+}
+
 html {
 	direction: ltr;
 	overflow-x: hidden;
