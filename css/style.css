@@ -36495,6 +36495,7 @@ ul.team-list .team-item .thumb-info-social-icons {
 .lang-menu {
     margin-top: 10px;
     position: relative;
+	z-index: 1000;
 }
 
 .lang-menu .selected-lang {
