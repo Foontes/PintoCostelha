@@ -1,3 +1,30 @@
+@supports (-webkit-touch-callout: none) {
+  /* 1) o header cria um contexto isolado e fica no topo */
+  #header { position: relative; z-index: 9999; isolation: isolate; }
+
+  /* 2) o menu e o dropdown têm z-index acima do resto */
+  .lang-menu { position: relative; z-index: 10000; }
+  .lang-menu ul {
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    z-index: 2147483647 !important; /* foge de qualquer conflito */
+  }
+
+  /* 3) imagem/hero lá atrás */
+  .imagem-full,
+  .imagem-full img { position: relative; z-index: 0 !important; }
+
+  /* 4) se o header estiver sticky, reforça o z-index nele próprio */
+  #header .header-body { position: relative; z-index: 10001; }
+
+  /* 5) evita cortes no dropdown */
+  #header,
+  #header .header-body,
+  #header .header-container,
+  #header .header-row { overflow: visible !important; }
+}
+
 html {
 	direction: ltr;
 	overflow-x: hidden;
