@@ -95,7 +95,7 @@ li {
 	width: 100%;
 	border-top: 3px solid #EDEDED;
 	border-bottom: 1px solid transparent;
-	z-index: 1001;
+	z-index: 10010;
 }
 
 #header .header-body.header-body-bottom-border-fixed {
@@ -104,6 +104,12 @@ li {
 
 #header .header-body[class*="border-color-"] {
 	border-bottom: 0 !important;
+}
+
+#header .header-body,
+#header .header-container,
+.header-nav {
+  overflow: visible !important;
 }
 
 #header .header-container {
@@ -36499,7 +36505,7 @@ ul.team-list .team-item .thumb-info-social-icons {
 .lang-menu {
     margin-top: 10px;
     position: relative;
-	z-index: 10000;
+	z-index: 10020;
 }
 
 .lang-menu .selected-lang {
@@ -36531,6 +36537,7 @@ ul.team-list .team-item .thumb-info-social-icons {
     left: -7px;
     border-radius: 5px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	z-index: 10030;
 }
 
 .menu {
@@ -36644,4 +36651,17 @@ ul.team-list .team-item .thumb-info-social-icons {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.imagem-full,
+.imagem-full img {
+  position: relative;
+  z-index: 1;
+}
+
+.header-row,
+.header-nav,
+.header-logo {
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
 }
