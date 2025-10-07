@@ -36527,6 +36527,7 @@ ul.team-list .team-item .thumb-info-social-icons {
 }
 
 .lang-menu ul {
+	position: absolute !important;
     margin: 0;
     padding: 0;
     display: none;
@@ -36537,7 +36538,7 @@ ul.team-list .team-item .thumb-info-social-icons {
     left: -7px;
     border-radius: 5px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-	z-index: 10030;
+	z-index: 99999 !important;
 }
 
 .menu {
