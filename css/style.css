@@ -36,7 +36,6 @@ body a {
 	outline: none !important;
 }
 
-/* Selection */
 ::-moz-selection {
 	color: var(--primary-inverse);
 	background: var(--primary);
@@ -109,6 +108,9 @@ li {
 	flex-flow: row wrap;
 	align-items: center;
 	transition: ease height 300ms;
+	z-index: 21474836447;
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
 }
 
 @media (max-width: 991px) {
@@ -5743,7 +5745,6 @@ html[dir="rtl"] #header .tip-light:before {
 	background: var(--light--300) !important;
 }
 
-/* Header Navbar - Skin */
 @media (min-width: 992px) {
 	#header .header-nav-bar-primary {
 		background: var(--primary) !important;
